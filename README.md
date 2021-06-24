@@ -13,9 +13,8 @@
 #### Python- `python --version`
 
 ## Instructions to Play
-#### 1 ) Install Latest Version of Python- [Link](https://www.python.org/downloads/ "python.org")
-
-#### 2 ) Install GitHub Desktop- [Link](https://desktop.github.com/ "desktop.github.com")
+#### 1 ) Click on the Typospeed-1.0-amd64.msi , the setup file for installing the TypoSpeed app .
+#### 2 ) After downloading the 12.1 
 #### 3 ) Clone the [GitHub Respository for TypoSpeed]
 #### 4 ) Copy the Local Path of the Folder ITW_Project1 in your PC.
 #### 5 ) Write the command `cd "path"` in Command Prompt where "path" is replaced by the Local Path copied.
