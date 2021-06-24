@@ -81,12 +81,14 @@ root.configure(bg="midnight blue")
 #bg = PhotoImage(file="bg2.jpg")
 #my_label = Label(image=bg)
 #my_label.place(x=0, y=0, relwidth=1, relheight=1)
+########## variables
 score = 0
 timeleft = 60
 count = 0
 sliderwords = ''
 miss = 0
 
+####### labels
 fontlabel = Label(root, text='', font=('Arial Black', 25, 'bold'), bg='midnight blue', fg='white', width=35)
 fontlabel.place(x=10, y=10)
 labelslider()
@@ -111,9 +113,11 @@ hintlabel = Label(root, text='Type Word And Hit Enter Button', font=('arial', 30
                   fg='dark grey')
 hintlabel.place(x=120, y=450)
 
+
+############ entry box
 wordentry = Entry(root, font=('MS UI Gothic', 25, 'bold'), bd=10, justify='center')
 wordentry.place(x=240, y=300)
 wordentry.focus_set()
-
+### root binder
 root.bind('<Return>', startgame)
 root.mainloop()
