@@ -28,7 +28,7 @@
 - 4 ) At the end your complete score will be displayed after when 60 sec will be over!
 - 5 ) A message box will also appear , having buttons to 'retry' or 'cancel' . 
 ###  PREVIEW
-<img src="preview1.png" width="400" >
+<img src="preview01.png" width="400" >
 <img src="preview2.png" width="400">
 
 ### Credits:
