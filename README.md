@@ -26,4 +26,4 @@
 #### 8 ) A message box will also appear , having buttons to 'retry' or 'cancel' . 
 ###  PREVIEW
 <img src="2021-06-24 (1).png" width="400" >
-<img src="2021-06-24 (1).png" width="400" >
+<img src="2021-06-24 (2).png" width="400" >
