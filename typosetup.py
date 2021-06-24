@@ -2,7 +2,7 @@ import sys
 from cx_Freeze import *
 
 
-includefiles = ['Letter-T-icon_34797.ico']
+includefiles = ['icon.ico']
 base = None
 if sys.platform == "win32":
     base = "Win32GUI"
@@ -36,7 +36,7 @@ setup(
         Executable(
             script="main.py",
             base=base,
-            icon='Letter-T-icon_34797.ico',
+            icon='icon.ico',
         )
     ]
 )
