@@ -2,7 +2,9 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
+from tkinter import *
+import random
+from tkinter import messagebox
 
 words = ['test', 'rescue', 'interfere', 'light', 'woozy', 'fetch', 'wrong', 'bruise', 'abracadabra', 'mystery', 'socialism', 'awakened', 'amazing', 'comedian', 'appreciation', 'education', 'absurd', 'GloriusPurpose', 'Assgaurd', 'RAMAN', 'Hostel', 'Python is fun', 'kudos', 'Nice Game', 'TypoSpeed', 'BigBOSS']
 
@@ -60,9 +62,7 @@ def startgame(event):
     wordentry.delete(0, END)
 
 
-from tkinter import *
-import random
-from tkinter import messagebox
+
 
 root = Tk()
 root.geometry('800x600+400+100')
