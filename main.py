@@ -3,6 +3,7 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 from tkinter import *
+from PIL import Image,ImageTk
 import random
 from tkinter import messagebox
 
@@ -65,9 +66,14 @@ def startgame(event):
 
 
 root = Tk()
-root.geometry('800x600+400+100')
-root.configure(bg="white")
-root.title('Typospeed')
+root.wm_geometry('800x600')
+load = Image.open(r'C:\Users\sanka\Desktop\r.jpg')
+render = ImageTk.PhotoImage(load)
+img = Label(root, image=render)
+img.place(x=0, y=0)
+
+root.title('typing speed increaser Game ')
+root.iconbitmap('icon.ico')
 # we have not changed the icon of the app
 root.iconbitmap('Letter-T-icon_34797.ico')
 root.configure(bg="midnight blue")
