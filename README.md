@@ -24,3 +24,5 @@
 #### 6 ) You need to type it in the box given and hit 'Enter' key accordingly.
 #### 7 ) At the end your complete score will be displayed after when 60 minutes will be over!
 #### 8 ) A message box will also appear , having buttons to 'retry' or 'cancel' . 
+###  PREVIEW
+<img src="preview_screenshots/preview_1.png" width="400" >
