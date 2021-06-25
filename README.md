@@ -14,11 +14,12 @@
 #### Python- `python --version`
 ## Description-
   As we all know that in today's world we all have to use PCs for our work from home scenario and also there are a lot of coding related fields developing nowadays so it is really imp to type fast so as to do the task as early as possible. That's why we have come up with a speed typing test which runs a timer of 60 sec and gives you no. of hits and misses at the end of 60 sec
-## Installation:
+## Instructions to install the game:
 #### 1 ) Click on the Typospeed-1.0-amd64.msi , the setup file for installing the TypoSpeed app .
-#### 2 ) Download the 12.1 MB setup file from the repository ITW_Project1 . 
-#### 3 ) Now the TypoSpeed GUI app will be shown in the Desktop.
-#### 4 ) Now click on the icon to start the game !!
+#### 2 ) Download the 15.4 MB setup file from the repository ITW_Project1 . 
+#### 3 ) Install the TypoSpeed app from the setup file.
+#### 4 ) Now the TypoSpeed GUI app will be shown in the Desktop.
+#### 5 ) Now click on the icon to start the game !!
 
 
 ## Usage: 
