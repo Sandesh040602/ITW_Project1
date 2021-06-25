@@ -12,7 +12,7 @@
 ## Commands to Check Versions
 
 #### Python- `python --version`
-## Descriptions
+## Description-
   As we all know that in today's world we all have to use PCs for our work from home scenario and also there are a lot of coding related fields developing nowadays so it is really imp to type fast so as to do the task as early as possible. That's why we have come up with a speed typing test which runs a timer of 60 sec and gives you no. of hits and misses at the end of 60 sec
 ## Installation:
 #### 1 ) Click on the Typospeed-1.0-amd64.msi , the setup file for installing the TypoSpeed app .
