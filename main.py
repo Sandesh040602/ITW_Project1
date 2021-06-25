@@ -66,7 +66,7 @@ def startgame(event):
         time()
     hintlabel.configure(text='')#with the starting of timer , the hintlabel's text is made an empty string so that it is out of screen.
 
-    if (wordentry.get() == wordlabel['text']):#incrementing the score if the input string matches with any of it in the wordlist.
+    if (wordentry.get() == wordlabel['text']):#incrementing the score if the input string matches with the displayed word.
         score += 1
         scorelabelcount.configure(text=score)
 
@@ -86,19 +86,15 @@ root.wm_geometry('800x900')#defined the geometry of the main window.
 
 
 #applying background image for the main GUI window.
-load = Image.open(r'r.jpg')
-render = ImageTk.PhotoImage(load)
+load = Image.open(r'r.jpg')#Opens and identifies the given image file.
+render = ImageTk.PhotoImage(load)#It will bring the image given in load .
 img = Label(root, image=render)
 
 
-img.place(x=0,y=0)
-root.title('Typospeed')
-root.iconbitmap('icon.ico')
-#root.configure(bg="midnight blue")
+img.place(x=0,y=0)#placing the image with respect to the main window
+root.title('Typospeed')#Title of the main window.
+root.iconbitmap('icon.ico')#for icon of the game.
 
-#bg = PhotoImage(file="bg2.jpg")
-#my_label = Label(image=bg)
-#my_label.place(x=0, y=0, relwidth=1, relheight=1)
 
 #assigned variables values
 score = 0
@@ -108,39 +104,50 @@ sliderwords = ''
 miss = 0
 
 
-####labels
+#All the label-widgets used------->
 
-img2 = PhotoImage(file = r'C:\Users\sanka\Desktop\new.png')
+#HEADING IMAGE.
+img2 = PhotoImage(file = r'new.png')#inserting images.
 l1 = Label(root,image = img2,bg='SkyBlue1')
 l1.place(x=40,y=40)
 
+#SLIDING LABEL
 fontlabel = Label(root, text='', font=('Arial Black', 25, 'bold'), bg='SkyBlue1', fg='black', width=31,justify='center')
 fontlabel.place(x=31, y=110)
 labelslider()
 
+#WORD DISPLAYER
 random.shuffle(words)
 wordlabel = Label(root, text=words[0], font=('Bahnschrift', 30),justify='center',bg='SkyBlue1')
 wordlabel.place(x=400, y=340,anchor = CENTER)
 
+#SCORE LABEL
 scorelabel = Label(root, text='YOUR SCORE', font=('Comic Sans MS', 20, 'bold'), bg='LightSkyBlue1')
 scorelabel.place(x=60, y=200)
 
+#SCORE COUNTER
 scorelabelcount = Label(root, text=score, font=('arial', 18, 'bold'))
 scorelabelcount.place(x=140, y=255)
 
+#TIMER LABEL
 timerlabel = Label(root, text='TIME LEFT', font=('Comic Sans MS', 20, 'bold'), bg='LightSkyBlue1')
 timerlabel.place(x=520, y=200)
 
+#TIME COUNTER
 timerlabelcount = Label(root, text=timeleft, font=('arial', 18, 'bold'),fg='green')
 timerlabelcount.place(x=580, y=255)
 
+#MESSAGE BEFORE STARTING THE GAME.
 hintlabel = Label(root, text='Type Word And Hit Enter Button', font=('arial', 30, 'italic bold'), bg='powder blue',
                   fg='dark grey')
 hintlabel.place(x=120, y=500)
 
+#WORD ENTRY BOX
 wordentry = Entry(root, font=('MS UI Gothic', 25, 'bold'), bd=10, justify='center')
 wordentry.place(x=220, y=380)
 wordentry.focus_set()
 
-root.bind('<Return>', startgame)
+#BINDING
+root.bind('<Return>', startgame)#The binding function is used to deal with the events.
+                                #We can bind Python’s Functions and methods to an event as well as we can bind these functions to any particular widget.
 root.mainloop()
