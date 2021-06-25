@@ -1,3 +1,9 @@
+### all imports used
+from tkinter import *
+from PIL import Image,ImageTk
+import random
+from tkinter import messagebox
+
 #list of words
 words = ['test', 'rescue', 'interfere', 'light', 'woozy', 'fetch', 'wrong', 'bruise', 'abracadabra', 'mystery', 'socialism', 'awakened', 'amazing', 'comedian', 'appreciation', 'education', 'absurd', 'GloriusPurpose', 'Assgaurd', 'RAMAN', 'Hostel', 'Python is fun', 'kudos', 'Nice Game', 'TypoSpeed', 'BigBOSS']
 
@@ -57,11 +63,7 @@ def startgame(event):
 
     wordentry.delete(0, END)
 
-#imports
-from tkinter import *
-from PIL import Image,ImageTk
-import random
-from tkinter import messagebox
+
 
 #main window of GUI
 root = Tk()
@@ -69,7 +71,7 @@ root.wm_geometry('800x900')
 
 
 
-load = Image.open(r'C:\Users\sanka\Desktop\r.jpg')
+load = Image.open(r'r.jpg')
 render = ImageTk.PhotoImage(load)
 img = Label(root, image=render)
 
@@ -93,7 +95,7 @@ miss = 0
 
 ####labels
 
-img2 = PhotoImage(file = r'C:\Users\sanka\Desktop\new.png')
+img2 = PhotoImage(file = r'new.png')
 l1 = Label(root,image = img2,bg='SkyBlue1')
 l1.place(x=40,y=40)
 
